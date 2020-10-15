@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4.2.2</title>
+</head>
+<body>
+    <script>
+    //Books read and want to read
+    //List [{Title: "", author: "", read: t/f }]
+    //for loop
+    //index counter
+    // document.write (object.title+object.author)
+    //if read == T
+    // Print "You already read 'title' by 'author'"
+    //else read == f
+    // print "You still need to read 'title' by 'author'"
+    
+    let books=[{
+        title:"Midnight Library",
+        author: "Matt Haig",
+        read: false
+    },
+    {
+        title:"Just like you",
+        author: "Nick Hornby",
+        read: true
+    },
+    {
+        title: "Queenie",
+        author: "Candice Carty-Williams",
+        read: true
+    },
+    {
+        title: "More than a woman",
+        author: "Caitlin Moran",
+        read: false
+    }
+    ];
+
+    for (let index=0; index < books.length; index++){
+     if (books[index].read == true){
+         document.write ("You already read" + " " + books[index].title + " " + "by" + " " + books[index].author + ".");
+     }
+     else {
+         document.write ("You still need to read" + " "+ books[index].title + " " + "by" + " " + books[index].author + "." );
+     }
+    }; 
+    
+    </script>
+</body>
+</html>
