@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite recipes</title>
+</head>
+<body>
+<script>
+//List favourite recipes
+// For each recipe include recipeTitle "", servings num, ingredients [], directions ""
+//Document.write all recipes
+// Loop to list ingredients
+
+let favouriteRecipes = [{
+    recipeTitle: "Mushroom canelloni",
+    servings: 4,
+    ingredients: ['mushrooms', 'tomato', 'canelloni pasta', 'cheese', 'bechamel sauce'],
+    directions: "Slice the mushrooms into quarters, cook on the hob, add the tomatoes and season. Place this in the canelloni tubes and then cover with bechamel and cheese. Place in oven for half an hour until golden."
+},
+{
+    recipeTitle: "Pizza",
+    servings: 2,
+    ingredients: ['frozen aldi pizza', 'salami', 'artichokes', 'olives', 'mushroom'],
+    directions: "Cover the aldi pizza with the ingredients, place in oven for 15 mins and serve with salad"
+}
+
+];
+
+for (let index=0; index < favouriteRecipes.length; index++){
+    document.write("<br>"+ favouriteRecipes[index].recipeTitle + "<br>" + favouriteRecipes[index].servings + "<br>" + favouriteRecipes[index].ingredients + "<br>" + favouriteRecipes[index].directions);
+    
+};
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
